@@ -20,6 +20,10 @@
 .DS_Store
 *.pem
 
+# Ignore all .env files
+.env*
+
+
 
 # debug
 npm-debug.log*
