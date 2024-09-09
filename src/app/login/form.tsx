@@ -3,7 +3,7 @@
 import { signIn } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useSearchParams, useRouter } from "next/navigation";
+import {  useRouter } from "next/navigation";
 import { ChangeEvent, useState } from "react";
 
 export const LoginForm = () => {
@@ -15,7 +15,7 @@ export const LoginForm = () => {
   });
   const [error, setError] = useState("");
 
-  const searchParams = useSearchParams();
+ 
   const callbackUrl = "/choose"
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

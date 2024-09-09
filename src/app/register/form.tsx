@@ -4,7 +4,6 @@ import { signIn } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChangeEvent, useState } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
 
 export const RegisterForm = () => {
   const [loading, setLoading] = useState(false);
@@ -15,7 +14,7 @@ export const RegisterForm = () => {
   });
   const [error, setError] = useState("");
 
-  const searchParams = useSearchParams();
+  
   const callbackUrl ="/choose";
 
   const onSubmit = async (e: React.FormEvent) => {
