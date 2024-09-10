@@ -4,17 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "prisma generate"
+    "lint": "next lint"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.7",
-    "@prisma/client": "^5.7.1",
+   "@prisma/client": "^5.7.1",
     "@types/node": "^20.16.1",
     "@types/pouchdb-adapter-idb": "^6.1.7",
     "@types/react": "^18.2.45",
